@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css"> 
+    <title>Cadastro</title> 
+    <style type="text/css">
+        body{
+            background-color: #2B2A2A;
+        }
+        h1, p{
+            text-align: center;
+            color:#2B2A2A;
+            font-family: 'Jost', sans-serif;
+            background-color: #00BD71;
+            width: 100%;
+        }
+        label{
+            color:  #00BD71;
+            font-family: 'Jost', sans-serif;
+        }
+        button{
+            color: #00BD71;
+            font-family: 'Jost', sans-serif;
+            border-radius: 30px;
+            background-color: #2B2A2A;
+            font-size: 1rem;
+            cursor: pointer; 
+        }
+        input, textarea{
+            background-color: white;
+            border-radius: 30px;
+        }
+        .campo{
+            color: #00BD71;
+            font-family: 'Jost', sans-serif;
+            font-size: 1rem;
+        }
+        .grupo{
+            border: none;
+            margin-left: 5vw;
+        }
+        option{
+            color: #00BD71;
+            font-family: 'Jost', sans-serif;
+            font-size: 1rem;
+            background-color: #2B2A2A;
+            border: none;
+        }
+        placeholder{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Trabalhe Conosco </h1>
+        <p id="subtitulo"> Complete suas informações</p>
+        <br>
+
+    <form method="post" action="mailto:beatrizmds2005@gmail.com" enctype="text/plain">
+    <fieldset class="grupo">
+        
+        <div class="campo">
+            <label for = "txtnome"><strong>Nome Completo</strong> &nbsp; &nbsp;</label>
+            <input name="textnome" placeholder="Digite o nome completo" required /> <br/><br/>
+        </div>
+
+        <div class="campo">
+            <label for="txtemail"><strong>E-mail</strong> &nbsp;&nbsp;</label>
+            <input type="textemail" placeholder="Digite seu e-mail" id="Preencha seu Nome"><br><br>
+        </div>
+
+        <div class="campo">
+            <label for = "txtcida"><strong>Cidade:</strong> &nbsp; &nbsp;</label>
+            <input name="textcida" placeholder="Preencha o nome da cidade"required /> <br/><br/>
+        </div> 
+        
+        <div id="check">
+            <label for = "txtuf"><strong>UF:</strong> &nbsp; &nbsp;</label>
+            <select name="textuf"> 
+                <option >AC </option>  
+                <option selected>SP</option>  
+                <option >AL</option>  
+                <option >BA</option>  
+                <option >GO</option>  
+                <option >MT</option>  
+                <option >MG</option>
+                <option >MS</option>
+                <option >DF</option>
+                <option >CE</option>
+                <option >PE</option>
+                <option >PB</option> 
+                <option >RJ</option>
+                <option >RR</option> 
+                </select><br><br>
+        </div>    
+
+        <div class="campo">
+            <label for = "txtsenha"> <strong>Cadastre sua Senha:</strong> &nbsp; &nbsp;</label>
+            <input name="textsenha" type="password" placeholder="Preencha a sua senha"/> <br/> <br/>
+        </div>
+
+        <div class="campo">
+            <label for = "txtsexo"><strong>Sexo:</strong> &nbsp; &nbsp;</label>
+            <input name="textsexo" type="radio" value="F" checked> Feminino
+            <input name="textsexo" type="radio" value="M" >Masculino <br><br>
+        </div>
+
+        <div>
+            <label for="txtexp"><strong> Conte um pouco mais da sua expêriencia:</strong>&nbsp; &nbsp;</label>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea><br><br>
+        </div>
+
+        <div id="check"botao>
+            <input class="botao" type="submit" value="Concluido"/>&nbsp;&nbsp;
+            <input class="botao" type="button" value="Voltar" onClick="location.href='index.html';"/>
+
+        </div>
+    </fieldset class="grupo">
+    </select>
+    </form>
+
+   
+</body>
+</html>
